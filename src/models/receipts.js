@@ -46,7 +46,7 @@ const receipt3 = {
 }
 
 const receipts = [];
-receipts.push(receipt1).push(receipt2).push(receipt3);
+receipts.push(receipt1);
 
 
 export default receipts;
