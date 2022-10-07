@@ -2,23 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const state = {
+    receipt1: Receipts[0],
+    receipt2: Receipts[1],
+    receipt3: Receipts[2] 
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div classname="App">
+      <h1>Korilla Restaurant Receipts</h1>
+      <hr/>
+      <Receipt receiptOne={state.receipt1} />
+      <Receipt receiptTwo={state.receipt2} />
+      <Receipt receiptThree={state.receipt3} />
+    </div> 
   );
 }
 
